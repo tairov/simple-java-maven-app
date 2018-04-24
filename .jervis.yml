@@ -1,0 +1,20 @@
+language: java
+
+before_install:
+  - echo "jervis Before install"
+
+install: echo "jervis Install" && mvn -B -DskipTests clean package
+
+branches:
+  only:
+    - master
+    - stable
+
+jenkins:
+  pipeline_jenkinsfile: Jenkinsfile
+
+before_script:
+  - echo "jervis Before script"
+
+after_script:
+  - echo "jervis After script"
