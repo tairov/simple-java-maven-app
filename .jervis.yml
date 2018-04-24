@@ -3,7 +3,7 @@ language: java
 before_install:
   - echo "jervis Before install"
 
-install: echo "jervis Install" && mvn -B -DskipTests clean package
+install: echo "jervis Install"
 
 branches:
   only:
