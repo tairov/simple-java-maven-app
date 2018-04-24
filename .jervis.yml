@@ -10,8 +10,8 @@ branches:
     - master
     - stable
 
-jenkins:
-  pipeline_jenkinsfile: Jenkinsfile
+#jenkins:
+#  pipeline_jenkinsfile: Jenkinsfile
 
 before_script:
   - echo "jervis Before script"
